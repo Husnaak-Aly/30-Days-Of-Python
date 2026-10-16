@@ -1,76 +1,76 @@
-# score = 0
-# for i in range(5):
-#     if i == 0:
-#         first = input("What is the full name of Pakistan: (a) Islamic Republic of Pakistan  (b) Democratic Republic of Pakistan ").lower().strip()
-#         match first:
-#             case "a":
-#                 print("Correct answer")
-#                 score += 1
-#             case "b":
-#                 print("Wrong answer")
-#                 if score == 0:
-#                     continue
-#                 else:
-#                     score -=1
-#             case _:
-#                 print("Invalid option")
-#     elif i == 1:
-#         second = input("What is the national animal of Pakistan: (a) Ibex  (b) Markhor ").lower().strip()
-#         match second:
-#             case "a":
-#                 print("Wrong answer")
-#                 if score == 0:
-#                     continue
-#                 else:
-#                     score -= 1
-#             case "b":
-#                 print("Correct answer")
-#                 score +=1
-#             case _:
-#                 print("Invalid option")
-#     elif i == 2:
-#         third = input("Who is the PM of Pakistan: (a) Shahbaz Shareef  (b) Bilawal Bhutto ").lower().strip()
-#         match third:
-#             case "a":
-#                 print("Correct answer")
-#                 score += 1
-#             case "b":
-#                 print("Wrong answer")
-#                 if score == 0:
-#                     continue
-#                 else:
-#                     score -=1
-#             case _:
-#                 print("Invalid option")
-#     elif i == 3:
-#         fourth = input("Largest city of Pakistan: (a) Karachi  (b) Larkana ").lower().strip()
-#         match fourth:
-#             case "a":
-#                 print("Correct answer")
-#                 score += 1
-#             case "b":
-#                 print("Wrong answer")
-#                 if score == 0:
-#                     continue
-#                 else:
-#                     score -=1
-#             case _:
-#                 print("Invalid option")
-#     elif i == 4:
-#         fifth = input("What is the largest river of Pakistan: (a) Ravi river  (b) Indus River ").lower().strip()
-#         match fifth:
-#             case "a":
-#                 print("Wrong answer")
-#                 if score == 0:
-#                     continue
-#                 else:
-#                     score -= 1
-#             case "b":
-#                 print("Correct answer")
-#                 score += 1
-#             case _:
-#                 print("Invalid option")
-# print(f"Final score is {score}")    
+score = 0
+for i in range(5):
+    if i == 0:
+        first = input("What is the full name of Pakistan: (a) Islamic Republic of Pakistan  (b) Democratic Republic of Pakistan ").lower().strip()
+        match first:
+            case "a":
+                print("Correct answer")
+                score += 1
+            case "b":
+                print("Wrong answer")
+                if score == 0:
+                    continue
+                else:
+                    score -=1
+            case _:
+                print("Invalid option")
+    elif i == 1:
+        second = input("What is the national animal of Pakistan: (a) Ibex  (b) Markhor ").lower().strip()
+        match second:
+            case "a":
+                print("Wrong answer")
+                if score == 0:
+                    continue
+                else:
+                    score -= 1
+            case "b":
+                print("Correct answer")
+                score +=1
+            case _:
+                print("Invalid option")
+    elif i == 2:
+        third = input("Who is the PM of Pakistan: (a) Shahbaz Shareef  (b) Bilawal Bhutto ").lower().strip()
+        match third:
+            case "a":
+                print("Correct answer")
+                score += 1
+            case "b":
+                print("Wrong answer")
+                if score == 0:
+                    continue
+                else:
+                    score -=1
+            case _:
+                print("Invalid option")
+    elif i == 3:
+        fourth = input("Largest city of Pakistan: (a) Karachi  (b) Larkana ").lower().strip()
+        match fourth:
+            case "a":
+                print("Correct answer")
+                score += 1
+            case "b":
+                print("Wrong answer")
+                if score == 0:
+                    continue
+                else:
+                    score -=1
+            case _:
+                print("Invalid option")
+    elif i == 4:
+        fifth = input("What is the largest river of Pakistan: (a) Ravi river  (b) Indus River ").lower().strip()
+        match fifth:
+            case "a":
+                print("Wrong answer")
+                if score == 0:
+                    continue
+                else:
+                    score -= 1
+            case "b":
+                print("Correct answer")
+                score += 1
+            case _:
+                print("Invalid option")
+print(f"Final score is {score}")    
 
     
 

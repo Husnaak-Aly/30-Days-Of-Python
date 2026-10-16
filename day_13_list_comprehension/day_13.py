@@ -1,13 +1,13 @@
 # Filter only negative and zero in the list using list comprehension
-# numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
-# negative_zero = [i for i in numbers if i <= 0]
-# print(negative_zero)
+numbers = [-4, -3, -2, -1, 0, 2, 4, 6]
+negative_zero = [i for i in numbers if i <= 0]
+print(negative_zero)
 
 
 # Flatten the following list of lists of lists to a one dimensional list :
-# list_of_lists =[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# flatten = [num for row in list_of_lists for num in row]
-# print(flatten)
+list_of_lists =[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+flatten = [num for row in list_of_lists for num in row]
+print(flatten)
 
 
 # Using list comprehension create the following list of tuples:
@@ -23,42 +23,42 @@
 # (9, 1, 9, 81, 729, 6561, 59049),
 # (10, 1, 10, 100, 1000, 10000, 100000)]
 
-# num = [(i, 1, i, i*i, i**3, i**4, i**5) for i in range (11)]
-# print(num)
+num = [(i, 1, i, i*i, i**3, i**4, i**5) for i in range (11)]
+print(num)
 
 
 # Flatten the following list to a new list:
-# countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 # output:
-# [['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]
-# output = [
-#     [country.upper(), country.upper()[:3], city.upper()] 
-#     for sublist in countries 
-#     for country, city in sublist
-# ]
-# print(output)
+[['FINLAND','FIN', 'HELSINKI'], ['SWEDEN', 'SWE', 'STOCKHOLM'], ['NORWAY', 'NOR', 'OSLO']]
+output = [
+    [country.upper(), country.upper()[:3], city.upper()] 
+    for sublist in countries 
+    for country, city in sublist
+]
+print(output)
 
 
 # Change the following list to a list of dictionaries:
 
-# countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
+countries = [[('Finland', 'Helsinki')], [('Sweden', 'Stockholm')], [('Norway', 'Oslo')]]
 # output:
-# [{'country': 'FINLAND', 'city': 'HELSINKI'},
-# {'country': 'SWEDEN', 'city': 'STOCKHOLM'},
-# {'country': 'NORWAY', 'city': 'OSLO'}]
-# output = [{'country': country.upper(), 'city': city.upper() }
-#           for sublist in countries
-#           for country, city in sublist]
-# print(output)
+[{'country': 'FINLAND', 'city': 'HELSINKI'},
+{'country': 'SWEDEN', 'city': 'STOCKHOLM'},
+{'country': 'NORWAY', 'city': 'OSLO'}]
+output = [{'country': country.upper(), 'city': city.upper() }
+          for sublist in countries
+          for country, city in sublist]
+print(output)
 
 
 # Change the following list of lists to a list of concatenated strings:
-# names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
+names = [[('Asabeneh', 'Yetayeh')], [('David', 'Smith')], [('Donald', 'Trump')], [('Bill', 'Gates')]]
 # output
-# ['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']
-# output = [first +' ' + last for conc in names
-#           for first, last in conc]
-# print(output)
+['Asabeneh Yetaeyeh', 'David Smith', 'Donald Trump', 'Bill Gates']
+output = [first +' ' + last for conc in names
+          for first, last in conc]
+print(output)
 
 
 # Write a lambda function which can solve a slope or y-intercept of linear functions.

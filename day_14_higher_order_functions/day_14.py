@@ -204,127 +204,127 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 #1. Use for loop to print each country in the countries list.
 
-# for i in countries:
-#     print(i)
+for i in countries:
+    print(i)
 
 #2. Use for to print each name in the names list.
-# num = 1
-# for name in names:
-#     print("Name", num, ":", name)
-#     num += 1
+num = 1
+for name in names:
+    print("Name", num, ":", name)
+    num += 1
 
 # 3.Use for to print each number in the numbers list.
-# for num in numbers:
-#     print(num)
+for num in numbers:
+    print(num)
 
 #------------------LEVEL 2-------------------------
 #1. Use map to create a new list by changing each country to uppercase in the countries list
-# def upp(country):
-#     return country.upper()
-# upper_name = map(upp, countries)
-# print(list(upper_name))
+def upp(country):
+    return country.upper()
+upper_name = map(upp, countries)
+print(list(upper_name))
 
 
 #2. Use map to create a new list by changing each number to its square in the numbers list
-# def sqr(num):
-#     return num ** 2
-# sqr_nums = map(sqr, numbers)
-# print(list(sqr_nums))
+def sqr(num):
+    return num ** 2
+sqr_nums = map(sqr, numbers)
+print(list(sqr_nums))
 
 #3. Use map to change each name to uppercase in the names list
-# upper_name = list(map(str.upper, names))
-# print(upper_name)
+upper_name = list(map(str.upper, names))
+print(upper_name)
 
 #4. Use filter to filter out countries containing 'land'
-# def contain_land(country):
-#     if 'land' in country:
-#         return True
-#     return False
-# land = list(filter(contain_land, countries))
-# print(land)
+def contain_land(country):
+    if 'land' in country:
+        return True
+    return False
+land = list(filter(contain_land, countries))
+print(land)
 
-# land = list(filter(lambda x: x[-4:] ==  'land', countries))
-# land = list(filter(lambda x: x.endswith('land'), countries))
-# print(land)
+land = list(filter(lambda x: x[-4:] ==  'land', countries))
+land = list(filter(lambda x: x.endswith('land'), countries))
+print(land)
 
 
 #5. Use filter to filter out countries having exactly six characters.
-# six_letter_countries = list(filter(lambda x: len(x) == 6, countries))
-# print(six_letter_countries)
+six_letter_countries = list(filter(lambda x: len(x) == 6, countries))
+print(six_letter_countries)
 
 
 #6. Use filter to filter out countries containing six letters and more in the country list.
-# six_or_more_letter_countries = list(filter(lambda x: len(x) >= 6, countries))
-# print(six_or_more_letter_countries)
+six_or_more_letter_countries = list(filter(lambda x: len(x) >= 6, countries))
+print(six_or_more_letter_countries)
 
 
 #7. Use filter to filter out countries starting with an 'E'
-# start_with_E = list(filter(lambda x: x.startswith('E'), countries ))
-# print(start_with_E)
+start_with_E = list(filter(lambda x: x.startswith('E'), countries ))
+print(start_with_E)
 
 #8. Chain two or more list iterators (eg. arr.map(callback).filter(callback).reduce(callback))
-# mapped = list(map(lambda x: x ** 2, numbers))
-# filtered = list(filter(lambda x: x > 5, mapped))
-# reduced = reduce(lambda a,b: a +b, filtered)
-# print(reduced)
+mapped = list(map(lambda x: x ** 2, numbers))
+filtered = list(filter(lambda x: x > 5, mapped))
+reduced = reduce(lambda a,b: a +b, filtered)
+print(reduced)
 
 
 #9. Declare a function called get_string_lists which takes a list as a parameter and then returns a list containing only string items.
-# item_list = ['Husnaak', 'Ali', 23, 21, 'Sachin', 48]
-# def get_string_list(item):
-#     if type(item) == str :
-#         return True
-#     return False
-# string_only = list(filter(get_string_list, item_list))
-# print(string_only)
+item_list = ['Husnaak', 'Ali', 23, 21, 'Sachin', 48]
+def get_string_list(item):
+    if type(item) == str :
+        return True
+    return False
+string_only = list(filter(get_string_list, item_list))
+print(string_only)
 
 
 #10. Use reduce to sum all the numbers in the numbers list.
-# sum_of_all_numbers = reduce(lambda a,b: a+b, numbers)
-# print(sum_of_all_numbers)
+sum_of_all_numbers = reduce(lambda a,b: a+b, numbers)
+print(sum_of_all_numbers)
 
 
 #11. Use reduce to concatenate all the countries and to produce this sentence: 
 # Estonia, Finland, Sweden, Denmark, Norway, and Iceland are north European countries
-# sentence = reduce(lambda a,b: a+ ', '+b  , countries[:-1])
-# sentence += ', and ' + countries[-1] + ' are north European countries'
+sentence = reduce(lambda a,b: a+ ', '+b  , countries[:-1])
+sentence += ', and ' + countries[-1] + ' are north European countries'
 
 # print(sentence)
 
 
 #12. Declare a function called categorize_countries that returns a list of countries with some common pattern
 #  (you can find the countries list in this repository as countries2.js(eg 'land', 'ia', 'island', 'stan')).
-# def categorize_countries(countries2, pattern):
-    # return list(filter(lambda country: country.endswith(pattern), countries2))
-# print(categorize_countries(countries2, 'land'))
-# print(categorize_countries(countries2, 'ia'))
-# print(categorize_countries(countries2, 'Islands'))
+def categorize_countries(countries2, pattern):
+    return list(filter(lambda country: country.endswith(pattern), countries2))
+print(categorize_countries(countries2, 'land'))
+print(categorize_countries(countries2, 'ia'))
+print(categorize_countries(countries2, 'Islands'))
 # print(categorize_countries(countries2, 'stan'))
 
 
 #13. Create a function returning a dictionary, where keys stand for starting letters of countries 
 # and values are the number of country names starting with that letter.
-# def country_count(countries):
-#     letters = list(map(lambda country: country[0], countries))
+def country_count(countries):
+    letters = list(map(lambda country: country[0], countries))
 
-#     result = {}
+    result = {}
 
-#     for letter in letters:
-#         if letter in result:
-#             result[letter] += 1
-#         else:
-#             result[letter] = 1
+    for letter in letters:
+        if letter in result:
+            result[letter] += 1
+        else:
+            result[letter] = 1
 
-#     return result
-# print(country_count(countries2))
+    return result
+print(country_count(countries2))
 
 
 # Declare a get_first_ten_countries function - it returns a list of first ten countries from the countries.js list in the data folder.
-# def get_first_ten_countries(countires):
-#     ten_countries = list(filter(lambda country: countires.index(country) < 10 , countires))
+def get_first_ten_countries(countires):
+    ten_countries = list(filter(lambda country: countires.index(country) < 10 , countires))
 
-#     return ten_countries
-# print(get_first_ten_countries(countries2))
+    return ten_countries
+print(get_first_ten_countries(countries2))
 
 
 #Declare a get_last_ten_countries function that returns the last ten countries in the countries list.

@@ -1,24 +1,24 @@
 # Reverse a Number
-# x = input("Enter the number:")
-# for i in reversed(x):
-#     print(int(i), end="")
+x = input("Enter the number:")
+for i in reversed(x):
+    print(int(i), end="")
     
 
 
 # Count Digits
-# x = input("Enter the number:")
-# count = 0
-# for i in x:
-#     count += 1
-# print(count)
+x = input("Enter the number:")
+count = 0
+for i in x:
+    count += 1
+print(count)
 
 
 # Sum of Digits
-# x = input("Enter the number:")
-# sum = 0
-# for i in x:
-#     sum += int(i)
-# print("Sum of digits is",sum)
+x = input("Enter the number:")
+sum = 0
+for i in x:
+    sum += int(i)
+print("Sum of digits is",sum)
 
 
 # Product of Digits

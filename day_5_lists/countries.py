@@ -197,14 +197,14 @@ countries = [
 ];
 
 # Find the middle country(ies) in the countries list
-# middle = len(countries) // 2
-# print('Middle County:',countries[middle])
+middle = len(countries) // 2
+print('Middle County:',countries[middle])
 
 # Divide the countries list into two equal lists if it is even if not one more country for the first half.
-# first_half = countries[0:97]
-# second_half = countries[97:]
-# first_half.append('La La Land')
-# print(first_half)
+first_half = countries[0:97]
+second_half = countries[97:]
+first_half.append('La La Land')
+print(first_half)
 
 
 # ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']. Unpack the first three countries and the rest as scandic countries.

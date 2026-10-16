@@ -1,14 +1,14 @@
-# command = ["move", "north",]
+command = ["move", "north",]
 
-# match command:
-#     case ["quit"]:
-#         print("Goodbye!")
-#     case ["move", direction]:
-#         print(f"Moving towards {direction}")
-#     case ["teleport", x, y]:
-#         print(f"Jumping to coordinates {x}, {y}")
-#     case _:
-#         print("Unknown command")
+match command:
+    case ["quit"]:
+        print("Goodbye!")
+    case ["move", direction]:
+        print(f"Moving towards {direction}")
+    case ["teleport", x, y]:
+        print(f"Jumping to coordinates {x}, {y}")
+    case _:
+        print("Unknown command")
 
 
 

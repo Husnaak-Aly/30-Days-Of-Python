@@ -10,13 +10,14 @@
 pw = input("Enter the password:")
 x = len(pw)
 
-# if " " in pw:
-#     print("Password can not contain spaces")
-# elif x >= 8 and any(char.isdigit() for char in pw) and any(char.isupper() for char in pw):
-#     print("Strong password")
-# else:
-#     print("Weak password")
+if " " in pw:
+    print("Password can not contain spaces")
+elif x >= 8 and any(char.isdigit() for char in pw) and any(char.isupper() for char in pw):
+    print("Strong password")
+else:
+    print("Weak password")
 
+#better version
 if " " in pw:
     print("Password can not contain spaces!")
 else:
