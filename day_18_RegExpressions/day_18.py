@@ -3,18 +3,18 @@ import re
  
 #1. What is the most frequent word in the following paragraph?
 paragraph = 'I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.'
-# match = re.findall(r'\b\w+\b', paragraph.lower())
-# words = {}
-# for word in match:
-#     if word in words:
-#         words[word] += 1
-#     else:
-#         words[word] = 1
-# #sort by descending order of frequency
-# words_sorted = sorted(words.items(), key=lambda x: x[1], reverse=True)
-# print("Words with their frequencies:", words)        
-# most_frequent_word = max(words, key=words.get)
-# print("Most frequent word:", most_frequent_word)
+match = re.findall(r'\b\w+\b', paragraph.lower())
+words = {}
+for word in match:
+    if word in words:
+        words[word] += 1
+    else:
+        words[word] = 1
+#sort by descending order of frequency
+words_sorted = sorted(words.items(), key=lambda x: x[1], reverse=True)
+print("Words with their frequencies:", words)        
+most_frequent_word = max(words, key=words.get)
+print("Most frequent word:", most_frequent_word)
 
 
 #2. The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers from this whole text and find the distance between the two furthest particles.
